@@ -1,0 +1,75 @@
+* {
+    background-color: rgb(129, 234, 236);
+    font-family: "Poppins", "sans-serif";
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    margin: 0; /* Remove default margin for consistent styling */
+}
+
+.stopwatch {
+    align-items: center;
+    justify-content: center;
+    margin: 300px auto 0;
+    display: flex;
+    width: 90%;
+    max-width: 400px;
+    height: 250px;
+    background-color: rgb(2, 2, 2);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    padding: 20px 10px;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for interactions */
+}
+
+.stopwatch:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover for effect */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6); /* Intensify shadow on hover */
+}
+
+.stopwatch h1 {
+    background-color: black;
+    padding: 15px 25px; /* Add padding for a better look */
+    border-radius: 15px; /* Smooth corners for the heading */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow to the heading */
+    margin-bottom: 20px; /* Add space below the heading */
+    font-size: 2.5em; /* Increase the size for a more prominent display */
+    text-align: center; /* Center the text */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.stopwatch h1:hover {
+    background-color: rgb(30, 30, 30); /* Darken background color on hover */
+}
+
+.buttons {
+    display: flex; /* Arrange buttons in a row */
+    justify-content: center; /* Center buttons horizontally */
+    background-color: black;
+}
+
+.buttons button {
+    background-color: rgb(129, 234, 236); /* Change button background to a bright green */
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    margin: 5px;
+    border-radius: 10px; /* Smooth corners for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow to buttons */
+    font-size: 1.1em; /* Adjust font size for buttons */
+}
+
+.buttons button:hover {
+    background-color: rgb(37, 157, 159); /* Darken button color on hover */
+    transform: translateY(-3px); /* Slight upward movement on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Intensify shadow on hover */
+}
+
+.buttons button:active {
+    transform: translateY(1px); /* Slight downward movement on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+}
